@@ -4,7 +4,7 @@ import androidx.databinding.BaseObservable
 import androidx.lifecycle.MutableLiveData
 import com.example.lotto_mvvm.ui.dashboard.adapter.lotto_adapter
 import com.example.lotto_mvvm.ui.dashboard.model.Lotto_model
-import com.example.lotto_mvvm.ui.type.EnumViewType
+import com.example.lotto_mvvm.type.EnumViewType
 
 class DataViewModel : BaseObservable() {
 

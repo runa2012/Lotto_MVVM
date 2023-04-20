@@ -1,4 +1,4 @@
-package com.example.lotto_mvvm.ui.type
+package com.example.lotto_mvvm.type
 
 enum class EnumViewType {
 

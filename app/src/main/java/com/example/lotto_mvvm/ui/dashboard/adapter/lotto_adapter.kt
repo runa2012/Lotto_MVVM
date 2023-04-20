@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.lotto_mvvm.ui.dashboard.model.Lotto_model
 import com.example.lotto_mvvm.ui.dashboard.viewholder.Lotto_viewholder
-import com.example.lotto_mvvm.ui.type.EnumViewType
+import com.example.lotto_mvvm.type.EnumViewType
 
 class lotto_adapter(private val array : ArrayList<Lotto_model>, private val viewType : EnumViewType) : RecyclerView.Adapter<ViewHolder>() {
 
