@@ -7,14 +7,14 @@
 
         <variable
             name="datamodel"
-            type="com.example.lotto_mvvm.ui.dashboard.viewModel.DataViewModel" />
+            type="com.example.lotto_mvvm.ui.datamodel.viewModel.DataViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.dashboard.DataBindingFragment">
+        tools:context=".ui.datamodel.DataBindingFragment">
 
         <TextView
             android:id="@+id/datab_title"
@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:textSize="20sp"
             android:text="로또 프로그램"
@@ -34,9 +35,7 @@
             android:id="@+id/datab_lotto_current_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_margin="8dp"
             android:textAlignment="center"
             android:textSize="20sp"
             android:text="@{datamodel.currentNumber }"
@@ -54,7 +53,6 @@
             android:gravity="center"
             android:background="@android:color/holo_blue_dark"
             android:textColor="@color/white"
-            android:onClick="@{ () -> datamodel.startNumber()}"
             app:layout_constraintTop_toBottomOf="@+id/datab_lotto_current_number"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
@@ -64,11 +62,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/datab_getlotto"/>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

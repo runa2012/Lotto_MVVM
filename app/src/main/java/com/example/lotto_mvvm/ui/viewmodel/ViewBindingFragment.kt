@@ -1,5 +1,7 @@
 package com.example.lotto_mvvm.ui.viewmodel
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +16,6 @@ import com.example.lotto_mvvm.ui.viewmvvm.vindModel.ViewBindingViewModel
 class ViewBindingFragment : Fragment() , View.OnClickListener {
 
     private var _binding: FragmentViewbindingBinding? = null
-
     private val binding get() = _binding!!
     var homeViewModel : ViewBindingViewModel? = null
 
@@ -25,20 +26,20 @@ class ViewBindingFragment : Fragment() , View.OnClickListener {
     ): View {
         homeViewModel = ViewModelProvider(this)[ViewBindingViewModel::class.java]
         _binding = FragmentViewbindingBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         val textView: TextView = binding.databLottoCurrentNumber
-        homeViewModel?.text?.observe(viewLifecycleOwner) {
+        homeViewModel?.currentNumber?.observe(viewLifecycleOwner) {
             textView.text = it
         }
 
         binding.databGetlotto.setOnClickListener(this)
         binding.databLottolist.layoutManager = LinearLayoutManager( requireContext() , LinearLayoutManager.VERTICAL ,false)
         binding.databLottolist.adapter = homeViewModel?.lottolistAdapter
-
-        return binding.root
-    }
-
-    init {
 
     }
 

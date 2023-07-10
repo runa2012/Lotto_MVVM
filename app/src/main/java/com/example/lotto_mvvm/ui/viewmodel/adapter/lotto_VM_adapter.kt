@@ -1,19 +1,20 @@
-package com.example.lotto_mvvm.ui.dashboard.adapter
+package com.example.lotto_mvvm.ui.viewmodel.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.lotto_mvvm.ui.dashboard.model.Lotto_model
-import com.example.lotto_mvvm.ui.dashboard.viewholder.Lotto_viewholder
+import com.example.lotto_mvvm.model.Lotto_model
 import com.example.lotto_mvvm.type.EnumViewType
+import com.example.lotto_mvvm.ui.viewmodel.viewholder.Lotto_VM_viewholder
+import kotlinx.coroutines.flow.StateFlow
 
-class lotto_adapter(private val array : ArrayList<Lotto_model>, private val viewType : EnumViewType) : RecyclerView.Adapter<ViewHolder>() {
+class lotto_VM_adapter(private val array : StateFlow<List<Lotto_model>>, private val viewType : EnumViewType) : RecyclerView.Adapter<ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         when ( viewType ){
             1 -> {
-                return Lotto_viewholder.creates(parent)
+                return Lotto_VM_viewholder.creates(parent)
             }
             else -> {
                 throw Exception("")
@@ -21,15 +22,15 @@ class lotto_adapter(private val array : ArrayList<Lotto_model>, private val view
         }
     }
 
-    override fun getItemCount() = array.size
+    override fun getItemCount() = array.value.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val data = array[position]
+        val data = array.value[position]
 
         when ( holder ){
 
-            is Lotto_viewholder -> {
+            is Lotto_VM_viewholder -> {
                holder.bind(data)
             }
         }
