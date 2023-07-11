@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.lotto_mvvm.ui.viewmodel.ViewBindingFragment"
+        android:name="com.example.lotto_mvvm.ui.exview.ViewBindingFragment"
         android:label="@string/title_viewbinding"
         tools:layout="@layout/fragment_viewbinding" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.lotto_mvvm.ui.datamodel.DataBindingFragment"
+        android:name="com.example.lotto_mvvm.ui.exdata.DataBindingFragment"
         android:label="@string/title_databinding"
         tools:layout="@layout/fragment_databinding" />
 

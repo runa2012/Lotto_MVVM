@@ -7,14 +7,14 @@
 
         <variable
             name="datamodel"
-            type="com.example.lotto_mvvm.ui.datamodel.viewModel.DataViewModel" />
+            type="com.example.lotto_mvvm.ui.exdata.viewModel.DataViewModel" />
 
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.datamodel.DataBindingFragment">
+        tools:context=".ui.exdata.DataBindingFragment">
 
         <TextView
             android:id="@+id/datab_title"

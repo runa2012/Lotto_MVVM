@@ -1,18 +1,12 @@
-package com.example.lotto_mvvm.ui.datamodel
+package com.example.lotto_mvvm.ui.exdata
 
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lotto_mvvm.R
-import com.example.lotto_mvvm.databinding.FragmentDatabindingBinding
 import com.example.lotto_mvvm.base.BaseFragment
-import com.example.lotto_mvvm.ui.datamodel.viewModel.DataViewModel
+import com.example.lotto_mvvm.databinding.FragmentDatabindingBinding
+import com.example.lotto_mvvm.ui.exdata.viewModel.DataViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Main
 import kotlinx.coroutines.launch

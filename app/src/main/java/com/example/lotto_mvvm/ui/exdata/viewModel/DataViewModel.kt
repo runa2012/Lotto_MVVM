@@ -1,14 +1,11 @@
-package com.example.lotto_mvvm.ui.datamodel.viewModel
+package com.example.lotto_mvvm.ui.exdata.viewModel
 
 import android.annotation.SuppressLint
-import android.util.Log
-import androidx.databinding.BaseObservable
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.lotto_mvvm.ui.datamodel.adapter.lotto_adapter
+import com.example.lotto_mvvm.base.BaseViewModel
 import com.example.lotto_mvvm.model.Lotto_model
 import com.example.lotto_mvvm.type.EnumViewType
-import com.example.lotto_mvvm.base.BaseViewModel
+import com.example.lotto_mvvm.ui.exdata.adapter.lotto_adapter
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

@@ -1,7 +1,5 @@
-package com.example.lotto_mvvm.ui.viewmodel
+package com.example.lotto_mvvm.ui.exview
 
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

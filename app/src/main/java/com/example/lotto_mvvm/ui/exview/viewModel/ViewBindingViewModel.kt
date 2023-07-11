@@ -5,10 +5,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.lotto_mvvm.type.EnumViewType
-import com.example.lotto_mvvm.ui.datamodel.adapter.lotto_adapter
 import com.example.lotto_mvvm.model.Lotto_model
-import com.example.lotto_mvvm.ui.viewmodel.adapter.lotto_VM_adapter
+import com.example.lotto_mvvm.type.EnumViewType
+import com.example.lotto_mvvm.ui.exview.adapter.lotto_VM_adapter
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
