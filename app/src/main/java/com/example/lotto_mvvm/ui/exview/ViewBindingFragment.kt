@@ -36,6 +36,8 @@ class ViewBindingFragment : Fragment() , View.OnClickListener {
         }
 
         binding.databGetlotto.setOnClickListener(this)
+        binding.databGetlottoNotnumber.setOnClickListener(this)
+        binding.databGetlottoNumber.setOnClickListener(this)
         binding.databLottolist.layoutManager = LinearLayoutManager( requireContext() , LinearLayoutManager.VERTICAL ,false)
         binding.databLottolist.adapter = homeViewModel?.lottolistAdapter
 
@@ -47,7 +49,17 @@ class ViewBindingFragment : Fragment() , View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        homeViewModel?.startNumber()
+        when( v ){
+            binding.databGetlotto -> {
+                homeViewModel?.startNumber()
+            }
+            binding.databGetlottoNotnumber -> {
+                homeViewModel?.getNotNumber()
+            }
+            binding.databGetlottoNumber -> {
+                homeViewModel?.getIsNumber()
+            }
+        }
     }
 
 }

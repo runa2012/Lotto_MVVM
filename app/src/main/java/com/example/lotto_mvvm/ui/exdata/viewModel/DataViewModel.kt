@@ -23,7 +23,7 @@ class DataViewModel : BaseViewModel() {
     @SuppressLint("NotifyDataSetChanged")
     fun startNumber(){
         count++
-        val valuearray = ArrayList<Int>()
+        val valuearray = HashSet<Int>()
         currentNumber.value = ""
         while ( valuearray.size < 6){
             val random = ( Math.random() * 45 + 1 ).toInt()

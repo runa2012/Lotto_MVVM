@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-mergeDebugResources-51:/layout/fragment_databinding.xml",
+        "source": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-main-54:/layout/fragment_databinding.xml"
+    },
+    {
+        "merged": "com.example.lotto_mvvm.app-mergeDebugResources-51:/layout/fragment_viewbinding.xml",
+        "source": "com.example.lotto_mvvm.app-main-54:/layout/fragment_viewbinding.xml"
+    },
+    {
+        "merged": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-mergeDebugResources-51:/layout/activity_main.xml",
+        "source": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-mergeDebugResources-51:/layout/fragment_viewbinding.xml",
+        "source": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-main-54:/layout/fragment_viewbinding.xml"
+    },
+    {
+        "merged": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-mergeDebugResources-51:/layout/item_lotto.xml",
+        "source": "/Users/jun/.gradle/daemon/8.9/com.example.lotto_mvvm.app-main-54:/layout/item_lotto.xml"
+    }
+]
