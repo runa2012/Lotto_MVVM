@@ -35,14 +35,15 @@ class ViewBindingViewModel : ViewModel() {
             valuearray.add(random)
         }
 
+        val list = valuearray.sortedBy { it }
+
         viewModelScope.launch {
-            _currentNumber.value = valuearray.toString()
+            _currentNumber.value = list.toString()
         }
 
         _randomNumberList.addAll(valuearray)
 
-        val data = Lotto_model( count , valuearray )
-        _numberList.value += data
+        _numberList.value += Lotto_model( count , list )
 
         lottolistAdapter.notifyDataSetChanged()
     }
@@ -58,12 +59,12 @@ class ViewBindingViewModel : ViewModel() {
             }
         }
 
+        val list = valuearray.sortedBy { it }
         viewModelScope.launch {
-            _currentNumber.value = valuearray.toString()
+            _currentNumber.value = list.toString()
         }
 
-        val data = Lotto_model( count , valuearray )
-        _numberList.value += data
+        _numberList.value += Lotto_model( count , list )
 
         lottolistAdapter.notifyDataSetChanged()
     }
@@ -79,13 +80,12 @@ class ViewBindingViewModel : ViewModel() {
             }
         }
 
+        val list = valuearray.sortedBy { it }
         viewModelScope.launch {
-            _currentNumber.value = valuearray.toString()
+            _currentNumber.value = list.toString()
         }
 
-        val data = Lotto_model( count , valuearray )
-        _numberList.value += data
-
+        _numberList.value += Lotto_model( count , list )
         lottolistAdapter.notifyDataSetChanged()
     }
 

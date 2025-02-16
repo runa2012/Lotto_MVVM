@@ -35,7 +35,7 @@ class DataViewModel : BaseViewModel() {
             }
         }
 
-        val data = Lotto_model( count , valuearray )
+        val data = Lotto_model( count , valuearray.toList() )
         _numberList.value += data
         lottolistAdapter.notifyDataSetChanged()
     }

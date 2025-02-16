@@ -1,0 +1,7 @@
+com.example.lotto_mvvm.test.app-annotation-experimental-1.3.0-0 /Users/jun/.gradle/caches/8.9/transforms/035e5ee53db839820290abb1f5c8abb2/transformed/annotation-experimental-1.3.0/res
+com.example.lotto_mvvm.test.app-core-1.5.0-1 /Users/jun/.gradle/caches/8.9/transforms/f7e153e9f896068f5f9bf3b2d704817c/transformed/core-1.5.0/res
+com.example.lotto_mvvm.test.app-androidTest-2 /Users/jun/Desktop/project/git/Lotto_MVVM/app/build/generated/res/resValues/androidTest/debug
+com.example.lotto_mvvm.test.app-androidTest-3 /Users/jun/Desktop/project/git/Lotto_MVVM/app/build/generated/res/rs/androidTest/debug
+com.example.lotto_mvvm.test.app-mergeDebugAndroidTestResources-4 /Users/jun/Desktop/project/git/Lotto_MVVM/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.lotto_mvvm.test.app-mergeDebugAndroidTestResources-5 /Users/jun/Desktop/project/git/Lotto_MVVM/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.lotto_mvvm.test.app-merged_res-6 /Users/jun/Desktop/project/git/Lotto_MVVM/app/build/intermediates/merged_res/debugAndroidTest
